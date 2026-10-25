@@ -1,0 +1,34 @@
+{
+  "name": "social-worker-ai-mcp",
+  "version": "1.0.0",
+  "description": "Social Worker AI Model Context Protocol Server for Autonomous Vulnerable Advocacy, Frontline Crisis Intervention & Sacred Human Dignity Protocol",
+  "tools": [
+    {
+      "name": "audit_vulnerable_case_urgency",
+      "description": "Triage complex social casework scenarios across child welfare, mental health distress, and domestic crisis to establish risk priority vectors and intervention protocols",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "case_domain": { "type": "string" },
+          "vulnerability_indicators": { "type": "string" },
+          "environmental_safety_score": { "type": "string" }
+        },
+        "required": ["case_domain", "vulnerability_indicators"]
+      }
+    },
+    {
+      "name": "disburse_frontline_crisis_relief",
+      "description": "Trigger automated micro-escrow releases for emergency food security, temporary safe-house lodging, medical transit, and frontline caseworker stipends",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "recipient": { "type": "string" },
+          "amount_wei": { "type": "string" },
+          "proof_hash": { "type": "string" }
+        },
+        "required": ["category", "recipient", "amount_wei"]
+      }
+    }
+  ]
+}
